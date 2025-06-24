@@ -1,9 +1,11 @@
+setup:
+  config:
+    QDRANT__SERVICE__HTTP__PORT: "${PORT}"
+    QDRANT__SERVICE__HOST: "0.0.0.0"
+
 build:
   docker:
     web: Dockerfile
 
 run:
   web: ./qdrant
-  env:
-    QDRANT__SERVICE__HTTP__PORT: "${PORT}"
-    QDRANT__SERVICE__HOST: "0.0.0.0"
