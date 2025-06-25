@@ -1,8 +1,0 @@
-# heroku.yml
-setup:
-  addons: []
-build:
-  docker:
-    web: Dockerfile
-run:
-  web: ./qdrant # This will be executed by the entrypoint.sh script
